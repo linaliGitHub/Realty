@@ -1,0 +1,103 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+
+  &-left {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo {
+  width: 211px;
+  height: 100px;
+  background-color: $black;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  &-img {
+    width: 139px;
+  }
+}
+
+.menu-btn {
+  width: 40px;
+  height: 19px;
+  position: relative;
+  margin-left: 33px;
+  margin-right: 83px;
+
+  &::after,
+  &::before {
+    content: "";
+    background-color: $white;
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    left: 0;
+  }
+
+  &::after {
+    top: 0;
+  }
+
+  &::before {
+    bottom: 0;
+  }
+
+  span {
+    width: 25px;
+    height: 1px;
+    background-color: $white;
+    display: block;
+    position: absolute;
+    top: 9px;
+  }
+}
+
+.nav {
+  &-list {
+    display: flex;
+    list-style: none;
+  }
+
+  &-item {
+    margin-right: 49px;
+  }
+
+  &-link {
+    text-decoration: none;
+    color: $white;
+    font-size: 16px;
+  }
+}
+
+.header-area {
+  position: relative;
+  text-decoration: none;
+  color: $white;
+  font-size: 16px;
+  margin-right: 100px;
+
+  &::before {
+    content: '';
+    background: url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAVCAYAAACZm7S3AAABPklEQVQ4jY2TQSuEURSG3xmyQ1IjKywUVibMSsrWH5gfgB9g7x/4D4qVhQULJVJMmZWFFbLQKCkpUVgoHt3c21yn+33fvHXq65zz3Pver3MExNENrADHwCt/+gBOgVWgJ+6PwSngmnxd+b5/8DTwVgAGPQMTAXZWbxJNTWALOAd+TO3ScQ5eNoUHoGb+Rc3nY9Vd4cQkLRhizjg4cMkXYzUFhmhEvU9lSQNq61b5uouqFQd/RonxAngs+n53Vs4iK+5NsxmWq+bNTXfzbnRaSdKepBlzY1XSvq8HHZaAPv+WwaiApIaklqRRSQsG/JI0EiytdTRbbW3E49kFXHQItoBeuxiTfoPy9A3Mp7YqNapW61krGWInAzwCykVwP3BvwEegYnuzZnjRwEupvrwl2PTgdlZPHjzkd3g4WQf9AsBviJ1UnF/+AAAAAElFTkSuQmCC');
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: -4px;
+    left: -29px;
+  }
+}
+
+.header-tel {
+  text-decoration: none;
+  color: $white;
+  font-size: 16px;
+}
